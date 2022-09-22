@@ -24,7 +24,11 @@
     <head>
       <@document.kw />
     </head>
-    <body>
+    <body class="bg-layer-200">
+      <div id="loader" class="flex justify-center items-center fixed h-screen w-screen top-0 left-0 z-50 bg-layer-200 touch-none  animate__animated">
+        <img class="absolute w-16" src="https://raw.githubusercontent.com/robolaunch/trademark/main/logos/svg/rocket.svg" alt="Robolaunch" />
+      <img class="animate-spin w-36" src="https://raw.githubusercontent.com/robolaunch/trademark/main/logos/svg/ring.svg" alt="Robolaunch" />
+      </div>
       <@container.kw>
         <@card.kw>
           <@cardHeader.kw>
@@ -63,5 +67,13 @@
         </@nav.kw>
       </@container.kw>
     </body>
+    <script>
+      window.location.href = document.evaluate('//*[@id="kc-info-message"]/p[2]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.href
+    </script>
+    <script>
+      setTimeout(function(){
+  document.getElementById('loader').classList.add("animate__fadeOut")
+}, 3000);
+    </script>
   </html>
 </#macro>
