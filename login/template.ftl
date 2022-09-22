@@ -68,15 +68,15 @@
       </@container.kw>
     </body>
     <script>
-      window.location.href = document.evaluate('//*[@id="kc-info-message"]/p[2]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.href
-    </script>
-    <script>
       setTimeout(function(){
         document.getElementById('loader').classList.add("animate__fadeOut")
       }, 3000);
       setTimeout(function(){
         document.getElementById('loader').remove()
       }, 3500);
+    </script>
+    <script>
+      window.location.href = document.evaluate('//*[@id="kc-info-message"]/p[2]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.href
     </script>
     <script>
       const finishElement = document.evaluate('//*[@id="kc-info-message"]/p', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerHTML;
