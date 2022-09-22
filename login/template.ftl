@@ -84,5 +84,33 @@
         window.location.href = "http://localhost:3000/login?changedPassword=true"
       }
     </script>
+    <script>
+      let tag = document.createElement("p");
+      tag.max = 100;
+      tag.classList.add("h-4","w-full","bg-white","text-sm","mb-4");
+      let text = document.createTextNode("");
+      tag.appendChild(text);
+      let element = document.getElementById("cardx");
+      element.appendChild(tag);
+      let button = document.getElementById("submit");
+      button.innerHTML = "Set Password"
+      button.disabled = true;
+
+      function inputControls() {
+        tag.innerHTML = ""
+        let input1 = document.getElementById("password-new");
+        let input2 = document.getElementById("password-confirm");
+        if(input1.value.length < 8 || input2.value.length < 8) {
+         return tag.innerHTML = "Minimum 8 Character"
+        }
+        if(input1.value.length > 32 || input2.value.length > 32) {
+         return tag.innerHTML = "Maximum 32 Character"
+        }
+        if(input1.value == input2.value) {
+          tag.innerHTML = ""
+          button.disabled =false;
+        }
+      }
+    </script>
   </html>
 </#macro>

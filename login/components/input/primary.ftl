@@ -8,6 +8,7 @@
     <#if required>required</#if>
     aria-invalid="${messagesPerField.existsError(invalid)?c}"
     class="text-white h-12 w-full rounded p-2 bg-layer-100 border border-layer-600 focus:outline-none focus:border-primary-100 focus:ring-1 focus:ring-primary-100 placeholder:italic"
+    onkeyup="inputControls()"
     id="${name}"
     name="${name}"
     placeholder="<#compress><#nested></#compress>"
