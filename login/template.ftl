@@ -81,7 +81,7 @@
     <script>
       const finishElement = document.evaluate('//*[@id="kc-info-message"]/p', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.innerHTML;
       if (finishElement === "Your account has been updated.") {
-        window.location.href = "http://localhost:3000/login"
+        window.location.href = "http://localhost:3000/login?changedPassword=true"
       }
     </script>
   </html>
