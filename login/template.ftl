@@ -86,8 +86,7 @@
     </script>
     <script>
       let tag = document.createElement("p");
-      tag.max = 100;
-      tag.classList.add("h-4","w-full","bg-white","text-sm","mb-4");
+      tag.classList.add("text-red-300","text-sm","pb-4");
       let text = document.createTextNode("");
       tag.appendChild(text);
       let element = document.getElementById("cardx");
