@@ -85,76 +85,84 @@
       }
     </script>
     <script>
-      let element = document.getElementById("cardx");
-      let tag = document.createElement("p");
-      let text = document.createTextNode("");
+      let checkx = document.getElementById("username")
+      if (!checkx) {
+        let element = document.getElementById("cardx");
+        let tag = document.createElement("p");
+        let text = document.createTextNode("");
 
-      tag.classList.add("text-red-300","text-sm");
-      tag.appendChild(text);
-      element.appendChild(tag);
+        tag.classList.add("text-red-300","text-sm");
+        tag.appendChild(text);
+        element.appendChild(tag);
 
-      let min8 = document.getElementById("min8")
-      let max32 = document.getElementById("max32")
-      let minl = document.getElementById("minl")
-      let minu = document.getElementById("minu")
-      let noemail= document.getElementById("noemail")
+        let min8 = document.getElementById("min8")
+        let max32 = document.getElementById("max32")
+        let minl = document.getElementById("minl")
+        let minu = document.getElementById("minu")
+        let noemail= document.getElementById("noemail")
 
-      let button = document.getElementById("submit");
-      button.innerHTML = "Set Password"
-      button.disabled = true;
+        let button = document.getElementById("submit");
+        button.innerHTML = "Set Password"
+        button.disabled = true;
 
-function inputControls() {
-    button.disabled = true;
-    tag.innerHTML = ""
-    min8.removeAttribute('class');
-    max32.removeAttribute('class');
-    minu.removeAttribute('class');
-    minl.removeAttribute('class');
-    noemail.removeAttribute('class');
-    let input1 = document.getElementById("password-new");
-    let input2 = document.getElementById("password-confirm");
-    if (input1.value.length < 8 || input2.value.length < 8) {
-        min8.classList.add("text-red-400")
-        return tag.innerHTML = "Minimum 8 Character"
-    }
-    min8.classList.add("text-green-400")
-    if (input1.value.length > 32 || input2.value.length > 32) {
-        max32.classList.add("text-red-400")
+        function inputControls() {
+            button.disabled = true;
+            tag.innerHTML = ""
+            min8.removeAttribute('class');
+            max32.removeAttribute('class');
+            minu.removeAttribute('class');
+            minl.removeAttribute('class');
+            noemail.removeAttribute('class');
+            let input1 = document.getElementById("password-new");
+            let input2 = document.getElementById("password-confirm");
+            if (input1.value.length < 8 || input2.value.length < 8) {
+                min8.classList.add("text-red-400")
+                return tag.innerHTML = "Minimum 8 Character"
+            }
+            min8.classList.add("text-green-400")
+            if (input1.value.length > 32 || input2.value.length > 32) {
+                max32.classList.add("text-red-400")
 
-        return tag.innerHTML = "Maximum 32 Character"
-    }
-    max32.classList.add("text-green-400")
-    if (input1.value !== input2.value) {
-        return tag.innerHTML = "Passwords are not the same."
-    }
-    for (let i = 0; i < input1.value.length; i++) {
-        if (input1.value == input1.value.toUpperCase() || input2.value == input2.value.toUpperCase()) {
-            minl.classList.add("text-red-400")
+                return tag.innerHTML = "Maximum 32 Character"
+            }
+            max32.classList.add("text-green-400")
+            if (input1.value !== input2.value) {
+                return tag.innerHTML = "Passwords are not the same."
+            }
+            for (let i = 0; i < input1.value.length; i++) {
+                if (input1.value == input1.value.toUpperCase() || input2.value == input2.value.toUpperCase()) {
+                    minl.classList.add("text-red-400")
 
-            return tag.innerHTML = "Minimum one lowercase letter"
+                    return tag.innerHTML = "Minimum one lowercase letter"
+                }
+                minl.classList.add("text-green-400")
+
+                if (input1.value == input1.value.toLowerCase() || input2.value == input2.value.toLowerCase()) {
+                    minu.classList.add("text-red-400")
+
+                    return tag.innerHTML = "Minimum one uppercase letter"
+                }
+                minu.classList.add("text-green-400")
+
+            }
+            if ((input1.value.includes('@') && input1.value.includes('.')) || (input2.value.includes('@') && input2.value.includes('.'))) {
+                noemail.classList.add("text-red-400")
+
+                return tag.innerHTML = "Password cannot contain mail"
+            }
+            noemail.classList.add("text-green-400")
+
+            if (input1.value == input2.value) {
+                tag.innerHTML = ""
+                button.disabled = false;
+            }
         }
-        minl.classList.add("text-green-400")
-
-        if (input1.value == input1.value.toLowerCase() || input2.value == input2.value.toLowerCase()) {
-            minu.classList.add("text-red-400")
-
-            return tag.innerHTML = "Minimum one uppercase letter"
-        }
-        minu.classList.add("text-green-400")
-
-    }
-    if ((input1.value.includes('@') && input1.value.includes('.')) || (input2.value.includes('@') && input2.value.includes('.'))) {
-        noemail.classList.add("text-red-400")
-
-        return tag.innerHTML = "Password cannot contain mail"
-    }
-    noemail.classList.add("text-green-400")
-
-    if (input1.value == input2.value) {
-        tag.innerHTML = ""
-        button.disabled = false;
-    }
-}
+      }else {
+        r = document.getElementById("cardx")
+        r2 = document.getElementById("desc")
+        r.remove()
+        r2.remove()
+      }
     </script>
   </html>
 </#macro>
