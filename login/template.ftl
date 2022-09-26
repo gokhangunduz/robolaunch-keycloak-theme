@@ -85,9 +85,8 @@
       }
     </script>
     <script>
-      let checkx = document.getElementById("username")
-      if (!checkx) {
-        let element = document.getElementById("cardx");
+    if (window.location.href.includes("UPDATE_PASSWORD")){
+      let element = document.getElementById("cardx");
         let tag = document.createElement("p");
         let text = document.createTextNode("");
 
@@ -157,12 +156,13 @@
                 button.disabled = false;
             }
         }
-      } else {
+    }
+    else {
         r = document.getElementById("cardx")
         r2 = document.getElementById("desc")
         r.remove()
         r2.remove()
-      }
+    }
     </script>
   </html>
 </#macro>
