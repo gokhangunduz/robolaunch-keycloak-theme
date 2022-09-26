@@ -1,6 +1,12 @@
 <#macro kw component="button" rest...>
   <div id="cardx"></div>
-
+  <div class="rounded rounded-lg p-2 my-6 bg-layer-300 text-sm border border-layer-600 text-light-400" >
+    <p id="min8">Minimum 8 character.</p>
+    <p id="max32">Maximum 32 character.</p>
+    <p id="minl">Minimum one lowercase letter.</p>
+    <p id="minu">Minimum one uppercase letter.</p>
+    <p id="noemail">Password cannot contain mail.</p>
+  </div>
   <${component}
     id="submit"
     class="text-white w-full h-10 bg-primary-200 rounded hover:bg-primary-400 disabled:bg-gray-500 disabled:cursor-not-allowed"
