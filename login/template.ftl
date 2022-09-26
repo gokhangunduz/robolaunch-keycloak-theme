@@ -157,7 +157,7 @@
                 button.disabled = false;
             }
         }
-      }else {
+      } else {
         r = document.getElementById("cardx")
         r2 = document.getElementById("desc")
         r.remove()
