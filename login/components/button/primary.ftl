@@ -1,6 +1,6 @@
 <#macro kw component="button" rest...>
   <div id="cardx"></div>
-  <div class="rounded rounded-lg p-2 my-6 bg-layer-300 text-sm border border-layer-600 text-light-400" >
+  <div class="rounded rounded-lg pt-1 pb-2 my-6 bg-layer-300 text-sm border border-layer-600 text-lowContrast" >
     <p id="min8">Minimum 8 character.</p>
     <p id="max32">Maximum 32 character.</p>
     <p id="minl">Minimum one lowercase letter.</p>

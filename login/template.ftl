@@ -124,7 +124,6 @@ function inputControls() {
         return tag.innerHTML = "Maximum 32 Character"
     }
     max32.classList.add("text-green-400")
-
     if (input1.value !== input2.value) {
         return tag.innerHTML = "Passwords are not the same."
     }
