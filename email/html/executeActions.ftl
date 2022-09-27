@@ -105,11 +105,10 @@
     class="clean-body u_body"
     style="
       margin: 0;
-      padding: 0;
+      padding: 5% 5% 10% 5%;
       -webkit-text-size-adjust: 100%;
       background-color: #eaf0f6;
       color: #000000;
-      margin-top: 2rem;
     "
   >
     <!--[if IE]><div class="ie-container"><![endif]-->
