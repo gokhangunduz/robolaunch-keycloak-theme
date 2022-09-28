@@ -355,7 +355,7 @@
                                   "
                                 >
                                   <div
-                                    style="font-size: 14px; line-height: 180%"
+                                    style="font-size: 14px; line-height: 210%"
                                   >
 ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration)))?no_esc}
  </div>

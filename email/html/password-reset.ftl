@@ -351,7 +351,7 @@
                                   "
                                 >
                                   <div
-                                    style="font-size: 14px; line-height: 180%"
+                                    style="font-size: 14px; line-height: 210%"
                                   >
 ${kcSanitize(msg("passwordResetBodyHtml",link, linkExpiration, realmName, linkExpirationFormatter(linkExpiration)))?no_esc}
       </div>

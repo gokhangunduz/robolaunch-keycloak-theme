@@ -351,7 +351,7 @@
                                   "
                                 >
                                   <div
-                                    style="font-size: 14px; line-height: 180%"
+                                    style="font-size: 14px; line-height: 210%"
                                   >
 ${kcSanitize(msg("identityProviderLinkBodyHtml", identityProviderAlias, realmName, identityProviderContext.username, link, linkExpiration, linkExpirationFormatter(linkExpiration)))?no_esc}
      </div>
