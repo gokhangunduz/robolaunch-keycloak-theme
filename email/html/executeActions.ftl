@@ -231,7 +231,7 @@
                                       <img
                                         align="center"
                                         border="0"
-                                        src="https://gokhangunduz.com.tr/horizontal-gray.png"
+                                        src="https://www.robolaunch.cloud/icons/email/horizontal-gray.png"
                                         alt="Robolaunch"
                                         title="Robolaunch"
                                         style="
@@ -559,7 +559,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                               target="_blank"
                                             >
                                               <img
-                                                src="https://gokhangunduz.com.tr/rb-github.png"
+                                                src="https://www.robolaunch.cloud/icons/email/github.png"
                                                 alt="Github"
                                                 title="Github"
                                                 width="32"
@@ -620,7 +620,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                               target="_blank"
                                             >
                                               <img
-                                                src="https://gokhangunduz.com.tr/rb-linkedin.png"
+                                                src="https://www.robolaunch.cloud/icons/email/linkedin.png"
                                                 alt="LinkedIn"
                                                 title="LinkedIn"
                                                 width="32"
@@ -681,7 +681,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                               target="_blank"
                                             >
                                               <img
-                                                src="https://gokhangunduz.com.tr/rb-twitter.png"
+                                                src="https://www.robolaunch.cloud/icons/email/twitter.png"
                                                 alt="Twitter"
                                                 title="Twitter"
                                                 width="32"
@@ -742,7 +742,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                               target="_blank"
                                             >
                                               <img
-                                                src="https://gokhangunduz.com.tr/rb-youtube.png"
+                                                src="https://www.robolaunch.cloud/icons/email/youtube.png"
                                                 alt="YouTube"
                                                 title="YouTube"
                                                 width="32"
@@ -803,7 +803,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                               target="_blank"
                                             >
                                               <img
-                                                src="https://gokhangunduz.com.tr/rb-web.png"
+                                                src="https://www.robolaunch.cloud/icons/email/web.png"
                                                 alt="Robolaunch"
                                                 title="Robolaunch"
                                                 width="32"
