@@ -676,7 +676,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                             "
                                           >
                                             <a
-                                              href="https://www.twitter.com/"
+                                              href="https://www.twitter.com/robolaunch"
                                               title="Twitter"
                                               target="_blank"
                                             >
@@ -848,7 +848,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                 style="
                                   overflow-wrap: break-word;
                                   word-break: break-word;
-                                  padding: 10px;
+                                  padding: 10px 0px 24px 0px;
                                   font-family: arial, helvetica, sans-serif;
                                 "
                                 align="left"

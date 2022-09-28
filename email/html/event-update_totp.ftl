@@ -672,7 +672,7 @@ ${kcSanitize(msg("eventUpdateTotpBodyHtml",event.date, event.ipAddress))?no_esc}
                                             "
                                           >
                                             <a
-                                              href="https://www.twitter.com/"
+                                              href="https://www.twitter.com/robolaunch"
                                               title="Twitter"
                                               target="_blank"
                                             >
@@ -844,7 +844,7 @@ ${kcSanitize(msg("eventUpdateTotpBodyHtml",event.date, event.ipAddress))?no_esc}
                                 style="
                                   overflow-wrap: break-word;
                                   word-break: break-word;
-                                  padding: 10px;
+                                  padding: 10px 0px 24px 0px;
                                   font-family: arial, helvetica, sans-serif;
                                 "
                                 align="left"
