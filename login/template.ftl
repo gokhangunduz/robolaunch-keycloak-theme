@@ -24,12 +24,10 @@
     <head>
       <@document.kw />
     </head>
-    <body class="bg-layer-200">
-      <div id="loader" class="flex justify-center items-center fixed h-screen w-screen top-0 left-0 z-50 bg-layer-200 touch-none  animate__animated">
-        <img class="absolute w-16" src="https://raw.githubusercontent.com/robolaunch/trademark/main/logos/svg/rocket.svg" alt="Robolaunch" />
-      <img class="animate-spin w-36" src="https://raw.githubusercontent.com/robolaunch/trademark/main/logos/svg/ring.svg" alt="Robolaunch" />
-      </div>
-      <@container.kw>
+    <body >
+<div class="flex w-screen">
+<div class="w-[50%]">
+        <@container.kw>
         <@card.kw>
           <@cardHeader.kw>
             <@title.kw />
@@ -66,15 +64,18 @@
           </#if>
         </@nav.kw>
       </@container.kw>
+</div >
+      <div class="flex flex-col justify-center items-center w-[50%]" style="background: rgb(70,16,106);
+background: linear-gradient(180deg, rgba(70,16,106,1) 10%, rgba(21,83,114,1) 100%);" >
+  <img class="h-[75px]" src="https://www.robolaunch.cloud/images/robolaunch-horizontal.svg" alt="Robolaunch">
+  <span class="text-3xl font-semibold text-white py-7">Develop, Deploy and Manage at Scale!</span>
+  <p class="text-white text-xs text-center w-[80%]" >robolaunch is a Cloud-Native Robotics Platform that provides the end-to-end infrastructure, software stack and tools for developing, simulating, deploying and operating ROS/ROS2 robots at scale.</p>
+      </div>
+</div>
+
+
+
     </body>
-    <script>
-      setTimeout(function(){
-        document.getElementById('loader').classList.add("animate__fadeOut")
-      }, 3000);
-      setTimeout(function(){
-        document.getElementById('loader').remove()
-      }, 3500);
-    </script>
     <script>
       window.location.href = document.evaluate('//*[@id="kc-info-message"]/p[2]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.href
     </script>

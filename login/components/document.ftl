@@ -85,9 +85,6 @@
     html , body {
       font-family: "Poppins", sans-serif;
         }
-    .robolaunch-bg {
-      background: linear-gradient(72.25deg, #35b8fa 0%, #ac2dfe 100%);
-        }
         }
   </style>
 
